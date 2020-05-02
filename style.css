@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #E5C82B;
+}
+
+#header a {
+    color: #6F6F6F;
+}
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a:hover {
+    cursor: default;
+    transform: scale(1.2);
+    color: black!important;
+    transition: ease-in;
+    transition-duration: .2s;
+}
+
+i:hover {
+    cursor: default;
+    transform: scale(1.2);
+    color: black;
+    transition: ease-in;
+    transition-duration: .2s;
+}
+
+/* #pageWraper {
+    position: relative;
+    min-width: 540px;
+} */
+
+#header {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#E5C82B;
+    font-weight: 900;
+    width: 100%;
+    overflow: hidden!important;
+    min-height: 30px;
+    padding: 10px 5%;
+    z-index: 9;
+}
+
+#social li {
+    display: inline-block;
+    padding: 0 10px;
+    margin-left: 20px;
+}
+
+#topBG {
+    background-image: url('header_BG.png');
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden!important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#topOverlay {
+    background-color: #6F6F6F;
+    overflow: hidden!important;
+    height: 100vh;
+    width: 100%;
+    opacity: 0.7;
+}
+
+#topNav, #topNav h1, h1 a {
+    background-color: transparent;
+}
+
+#topNav {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+#topNav h1, h1 a {
+    color: #E5C82B;
+}
+
+#topNav h1 {
+    padding: 35px;
+}
+
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color:#6F6F6F;
+    font-weight: 600;
+    width: 80%;
+    margin: 50px auto;
+    height: 75vh;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.section {
+    line-height: 1.35;
+    margin-bottom: 35px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+.frame {
+    background-image: url('scuba.jpg');
+    width: 1940px;
+    height: 540px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 2px;
+    margin-left: 25px;
+    border: solid 10px #6F6F6F;
+}
+
+#footer {
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+    color: #6F6F6F;
+    
+}
+
+#footer p {
+    font-size: 60px;
+    font-weight: 800;
+    margin: 20px;
+}
+
+#footer span {
+    font-weight: 800;
+}
+
+@media (max-width: 1000px) {
+    #topBG {
+        background-position: center center;
+    }
+
+    #container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .frame {
+        margin: 0;
+        width: 100%;
+    }
+}
